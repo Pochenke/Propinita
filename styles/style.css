@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Playfair+Display:wght@400&display=swap');
+
+:root
+{
+    --background: #7e6652;
+    --dark-one: #2C3639;
+    --dark-two: #3F4E4F;
+    --light-brown: #DCD7C9;
+    --light-brown-two: #b6a995;
+}
+
+html
+{
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    color: #4e4d4d;
+    background-color: var(--background);
+}
+
+main
+{
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 3rem 1.6rem 6rem 1.6rem;
+    background: linear-gradient(30deg, var(--dark-one), var(--dark-two));
+    border-radius: 2.5rem;
+    box-shadow: 0 2px 2px #382911;
+}
+
+.title
+{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    padding-bottom: 3rem;
+    color: var(--light-brown);
+}
+
+section
+{
+    background-color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1.6rem;
+    padding: 0 1.6rem;
+    border-radius: 1rem;
+    box-shadow: inset 0 2px 2px lightgray;
+}
+
+section > div
+{
+    padding: 1.6rem 0;
+}
+
+.bill
+{
+    display: flex;
+}
+
+.bill label
+{
+    flex: 1;
+    align-self: center;
+}
+
+.bill input
+{
+    flex: 3;
+}
+
+input[type="number"]
+{
+    font-family: inherit;
+    background: #f4f4f5;
+    font-size: 1.6rem;
+    border: 1px solid lightgray;
+    border-radius: 0.5rem;
+    padding: 0.8rem 0 0.8rem 1rem;
+    box-shadow: inset 0 2px 2px lightgray;
+}
+
+.space
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total
+{
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.range
+{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    margin-top: 1.2rem;
+    background: rgb(224, 205, 189);
+    border-radius: 0.3rem;
+    outline-color: #775c50;
+}
+
+.range::-webkit-slider-thumb
+{
+    -webkit-appearance: none;
+    width: 2.2rem;
+    height: 2.2rem;
+    background: var(--light-brown-two);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.range::-moz-range-thumb
+{
+    width: 2.2rem;
+    height: 2.2rem;
+    background: var(--light-brown-two);
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+}
+
+.range::-moz-focus-outer
+{
+    border: 0;
+}
+
+.footer
+{
+    text-align: center;
+    padding-top: 3rem;
+    margin-bottom: 0;
+    color:var(--light-brown);
+}

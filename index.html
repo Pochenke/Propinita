@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROPINITA</title>
+    <link rel="shortcut icon" href="./styles/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <main id="container">
+        <h1 class="title">PROPINITA</h1>
+        <section>
+            <div class="bill">
+                <label for="yourBill">Monto</label>
+                <input type="number" placeholder="Monto" id="yourBill">
+            </div>
+            <div>
+                <div class="space">
+                    <label for="tipInput">Porcentaje de propina</label>
+                    <span id="tipPercent"></span>
+                </div>
+                <input type="range" value="0" id="tipInput" class="range">
+            </div>
+            <div class="space">
+                <span>Propina</span>
+                <span id="tipValue"></span>
+            </div>
+            <hr>
+            <div class="space total">
+                <span>Total</span>
+                <span id="totalWithTip"></span>
+            </div>
+
+        </section>
+        <section>
+            <div>
+                <div class="space">
+                    <label for="splitInput">Dividir</label>
+                    <span id="splitValue"></span>
+                </div>
+                <input type="range" min="1"  max="10" value="1" id="splitInput" class="range">
+            </div>
+            <div class="space">
+                <span>Monto por persona</span>
+                <span id="billEach"></span>
+            </div>
+            <div class="space">
+                <span>Propina por persona</span>
+                <span id="tipEach"></span>
+            </div>
+        </section>
+        <h2 class="footer">Lucas Aquino - 2022</h2>
+
+        <script src="./js/app.js"></script>
+    </main>
+</body>
+</html>
